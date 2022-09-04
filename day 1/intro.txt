@@ -1,0 +1,153 @@
+What, Why, Where, how and when to use WebAPI 
+
+What is REST
+
+--------------------------------------------------
+1. To develop a Web API with CRUD Operaions (as 
+WebAPI is all about data)
+2. Implement Rest standards in your application
+3. Use EF Core with SQL Server database for CRUD operations
+4. How to consume other api 
+	a. using Javascript api - fetch 
+		This is very fast, light weight, but less secure
+	b. Server side - HttpClient 
+
+Consume CRUD operations
+
+5. ASP.net Core features like
+	DI - Dependency Injection
+	Repository Pattern - best pattern to develop WebAPI 
+-----------------------------------------------------------------
+Pre-reuisite
+1. Software setup
+	Visual Studio 2022
+	Visual Studio 2019 + Postman / Fiddler
+	SQL Server with SSMS
+2. OOPS fundamentals 
+	Javascript - to consume the WebAPI 
+
+3. Git Hub, to pull all my code, notes, examples, pictures
+----------------------------------
+Training Goals
+
+1. Become a Proficient WebAPI devloper
+2. Takeup an new project / existing project
+-------------------------------------
+Be present all the time
+Complete the task, assignments, code, demo etc.
+Be on time
+Be interactive
+
+
+
+
+
+
+
+				We have using Web Service since many years
+
+		Web services used SOAP messaages for communiction
+
+		SOAP packages are heavy in today world
+
+		Thus we wanted a more light weight data for communication, SOAP was more of metadata
+
+
+	SOAP
+	<.....>
+	<temperature:string> 32 </temperature:string>
+	</....>
+
+	it is proxy based, thus strongly typed with the data and server
+
+	---------
+	JSON
+
+	32
+
+	----------------------------------------------------------------------------------------------------------------------------
+	2. Web Servies did not follow the HTTP protocol standards
+		REST is completely based on HTTP protocol
+------------------------------------------------------------------------------------------------------------------
+		REST - Representational State Transer is a W3C and ECMA standard 
+		
+		Microsoft took this standards
+
+		Created framework out of it, compilers, classes
+
+		and is then called as WebAPI
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
