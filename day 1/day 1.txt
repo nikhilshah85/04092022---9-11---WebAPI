@@ -1,0 +1,34 @@
+
+
+Lab:
+
+1. Create your first WebAPI project
+2. Add a new WebAPI controller GreetingsController - empty
+3. Add Actions methods for below
+	Greet
+	Greet(string name)
+	Calculate
+
+4. Build and run the project
+
+5. Read 
+	https://developer.mozilla.org/en-US/docs/Web/API
+
+-------------------------------------------------------------------------------------------------------------
+		Tomorrow :
+				Develop a Web API with In memory collection and CRUD operations
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
