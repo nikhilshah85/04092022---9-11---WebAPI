@@ -213,11 +213,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hp\\Desktop\\04092022 - 9-11  WebAPI\\day 2\\ProductsAPI\\ProductsAPI.csproj",
+      "projectUniqueName": "C:\\Users\\hp\\Desktop\\04092022 - 9-11  WebAPI\\04092022---9-11---WebAPI\\day 2\\ProductsAPI\\ProductsAPI.csproj",
       "projectName": "ProductsAPI",
-      "projectPath": "C:\\Users\\hp\\Desktop\\04092022 - 9-11  WebAPI\\day 2\\ProductsAPI\\ProductsAPI.csproj",
+      "projectPath": "C:\\Users\\hp\\Desktop\\04092022 - 9-11  WebAPI\\04092022---9-11---WebAPI\\day 2\\ProductsAPI\\ProductsAPI.csproj",
       "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hp\\Desktop\\04092022 - 9-11  WebAPI\\day 2\\ProductsAPI\\obj\\",
+      "outputPath": "C:\\Users\\hp\\Desktop\\04092022 - 9-11  WebAPI\\04092022---9-11---WebAPI\\day 2\\ProductsAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",

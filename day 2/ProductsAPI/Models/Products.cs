@@ -58,7 +58,7 @@
                 pList.Remove(p);
                 return "Product Removed Successfully";
             }
-            throw new Exception("Product not found")
+            throw new Exception("Product not found");
            
         }
 
