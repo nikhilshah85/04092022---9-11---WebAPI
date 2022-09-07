@@ -1,6 +1,7 @@
 What, Why, Where, how and when to use WebAPI 
 
 What is REST
+REST --> Representational State Transfer
 
 --------------------------------------------------
 1. To develop a Web API with CRUD Operaions (as 
