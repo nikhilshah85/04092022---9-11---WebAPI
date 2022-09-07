@@ -1,0 +1,121 @@
+1. Start SSMS
+2. Create a new database, add a table and some sample records
+	create database shoppingAPIDB
+
+	use shoppingAPIDB
+
+	create table Products
+	(
+		pId int primary key,
+		pName varchar(20),
+		pCategory varchar(20),
+		pPrice int,
+		pIsInStock bit
+	)
+
+	insert into Products values(101,'Pepsi','Cold-Drinks',50,1)
+	insert into Products values(102,'Maggie','Fast-Food',50,1)
+	insert into Products values(103,'Pasta','Fast-Food',50,1)
+
+3. create a new WebAPI Application - shoppingWebAPI - EF
+
+4. Build the application 
+
+5. Add Nuget Packages from solution explorer 
+	There are 4 nugets we need to be installed in a sequence
+	right click solution explorer, manage nuget package, browse and enter Entityframeworkcore
+
+	Microsoft.EntityFrameworkCore.Design
+	Microsoft.EntityFrameworkCore.Tools
+	Microsoft.EntityFrameworkCore
+	Microsoft.EntityFrameworkCore.SqlServer
+
+6. build the application
+
+7. Go to tools -> Nuget Package Manager -> Nuget Package Manager Console
+	fire the Scaffold-DBContext command
+
+	Scaffold-DbContext "server=WIN8\NIKHILINSTANCE; database=shoppingAPIDB;integrated security=true" -OutputDir Models\EF -	Provider Microsoft.EntityFrameworkCore.SqlServer
+
+	This will POCO classes for your application - POCO - Plain C# Objects 
+	EF is based on ORM pattern - Object relational mapping
+
+
+8. Build the applciation, check in the solution explorer, you  will get a folder - Models -> EF -> DBContext Class and POCO class
+
+9. In a controller folder, add new API controller with EF 
+		in the models - choose the name of your class - mapped to table in database
+		in the context - choose the DBContext class that got generated during step 7
+
+10. you get a new contoller file, it used Dependency injection by default, which we should use but we have not studied DI yet
+
+11. Remove the constructor from Controller file
+
+12. Instantiate the new object of DBContext class
+
+13. Build the application, run the application
+
+14. Perform all the crud operations and for all the operations, database will be updated
+
+15. add a new table customers with some records
+
+	
+
+create table Customers
+(
+	cId int primary key,
+	cName varchar(20),
+	cCategory varchar(20),
+	cLocation varchar(20),
+	cWallet int,
+	cIsActive bit)
+
+insert into Customers values(501, 'Nikhil','Regular','Mumbai',5000,1)
+
+16. go back to Visual studio --> tools -> Nuget package manager -> package manager console
+
+	fire the same command with -Force parameter
+
+	Scaffold-DbContext "server=WIN8\NIKHILINSTANCE; database=shoppingAPIDB;integrated security=true" -OutputDir Models\EF -Provider Microsoft.EntityFrameworkCore.SqlServer -Force
+
+17. check the Models->EF Folder- it will add a new class Customers.cs
+
+18. create a new API controller with EF and follow same process like you did for Products (step 9 to 14)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
