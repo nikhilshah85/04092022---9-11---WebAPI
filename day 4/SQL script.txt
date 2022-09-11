@@ -1,0 +1,59 @@
+create database bankingDBAPI
+
+use bankingDBAPI
+
+create table branchInfo
+(
+	branchId int primary key,
+	branchName varchar(20),
+	branchCity varchar(20)
+)
+insert into branchInfo values(10,'Hi-Tech','Hyderabad')
+insert into branchInfo values(20,'White-Field','Bangalore')
+insert into branchInfo values(30,'BKC','Mumbai')
+insert into branchInfo values(40,'Siri-suri','Chennai')
+
+
+create table accountsInfo
+(
+	accNo int primary key,
+	accName varchar(20),
+	accType varchar(20),
+	accBalance int,
+	accBranch int,
+	constraint fk_accBranch  foreign key(accBranch) references branchInfo)
+
+
+	insert into accountsInfo values(1,'Nikhil','Savings',9000,30)
+	insert into accountsInfo values(2,'Akshay','Savings',19000,20)
+	insert into accountsInfo values(3,'Rohan','Current',94000,30)
+	insert into accountsInfo values(4,'Mohan','Savings',23000,10)
+	insert into accountsInfo values(5,'Sohan','Savings',56000,30)
+	insert into accountsInfo values(6,'Rahul','Current',600,40)
+	insert into accountsInfo values(7,'Neelam','Savings',89000,30)
+	insert into accountsInfo values(8,'Sonal','Savings',1500,10)
+	insert into accountsInfo values(9,'Minal','PF',50,20)
+
+
+	create table transactionInfo
+	(
+		trId int primary key identity(500,1),
+		trDate date,
+		trAmount int,
+		accNoFrom int,
+		accNoTo int,
+		branchNo int,
+
+		constraint fk_accNoFrom foreign key (accNoFrom) references accountsInfo,
+		constraint fk_accNoTo foreign key (accNoTo) references accountsInfo,
+		constraint fk_branchNo foreign key (branchNo) references branchInfo,
+	)
+
+	insert into transactionInfo values(getdate(),300,4,4,20)
+	insert into transactionInfo values(getdate(),2500,6,3,20)
+
+
+
+
+
+

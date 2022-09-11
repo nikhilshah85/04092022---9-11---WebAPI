@@ -1,0 +1,45 @@
+App of the day:
+	ASP.Net WEB Api APP with EF Core on SQL Server related tables
+
+1. create database and tables with same data and constraints
+
+2 Create a new WebAPI app - bankingAPI
+
+3. Install 4 Nuget packages
+	Microsoft.EntityFrameworkCore.Design
+	Microsoft.EntityFrameworkCore.Tools
+	Microsoft.EntityFrameworkCore
+	Microsoft.EntityFrameworkCore.SqlServer
+
+4. Build the project and open Nuget package manager console from tools
+fire the scaffold-dbcontext connectionstring -OutPutDir foldername -Provider providername
+
+5. createa a new API controller, choose the Model class and DBContext class which gor created in step 4
+
+6. Build the application, run and test the application
+
+------------- Customization
+
+7. add a new table transactions to database with some sample data
+
+8. repeate step 4, 5 and 6
+
+9. We want to fire an equi join between accounts and branch
+
+10. add a new class AccountTransactionBranch in Model, add proeprties and method to fire a linq query for joins
+
+12. Call the method in any controller to want to , are calling it AccountsController
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+	
