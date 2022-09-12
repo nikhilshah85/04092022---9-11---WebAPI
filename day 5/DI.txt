@@ -1,0 +1,24 @@
+ASP.net webapi with
+	EF Core 
+	DI - Dependency Injection
+	Repository Pattern
+	How to consume WebAPI In front end (ASP.Net MVC, Angular, React, Java etc...)
+
+---------------------------------------------------------------------------------------------
+	DI - is a framework feature this days with all the technologies
+
+	As a developer we create a lot of Objects using new Keyword, a real world object has lots of resources
+	
+	For A Web APP
+		We do not write any code to destroy the object (Most of developers)
+		in a web app, object keeps getting created for every new request on server
+		server memory keeps getting full and thus affects the performance after somedays days
+
+	----Instead from now on, 
+			Objects will be created by framework on demand and will be inject in request / response pipeline
+			Object will be destroyed by framework once request is processed
+
+		It also gives us an ability to decided when object should be destroyed
+
+	----------------------------
+	Feaature is available as Services in ASP.net core

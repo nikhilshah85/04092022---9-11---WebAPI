@@ -1,0 +1,22 @@
+1. declare a new object for the class you want to use
+	 Products _pObj;
+2. assign a reference of the object using a contructor
+	 public ProductsController(Products _pObjREF)
+        {
+            _pObj = _pObjREF;
+        }
+
+3. in program.cs mention when should be destroyed
+	object can be destroyed
+		a. PerCall - create a new object for every call and destroy it after process from server
+			services.AddTranscient(typeof(classname)
+			
+			
+		
+		b. PerSession - new object per user session - new object created for every user, 10 users 10 object, when user logs 				out - object will be destroyed
+			servies.AddScoped(typeof(classname)
+
+
+
+		c. static Object - same object for all the users
+			services.AddSingleTon(typeof(classname)
