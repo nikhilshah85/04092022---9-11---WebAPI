@@ -1,0 +1,33 @@
+﻿
+
+
+<script>
+    function searchAccount(){
+        var accNo = $("#txtAccNo").text();
+        var url = "https://localhost:7243/api/accounts/1";
+        fetch(url).then(response=>response.json())
+                 .then(data => {
+                     console.log(data);
+                     console.log(url);
+                     $("div").append("<h1> Account Number " + data.accNo + "</h1>" +
+                                      "<h1> Account Name " + data.accName + "</h1>" +
+                                      "<h1> Account Type " + data.accType + "</h1>" +
+                                      "<h1> Account Balance " + data.accBalance + "</h1>" +
+                                      "<h1> Account Branch " + data.accBranch + "</h1>")              
+                                                                                    
+                     
+                 })
+                 .catch(err =>{
+                     alert(err);
+                 })
+    }
+</script>
+
+
+
+    <input type="number" id="txtAccNo" placeholder="Enter Account Number to search data" class="form-control" onblur="searchAccount()"/>
+   
+
+    @*<div style="background-color:gray">*@
+        
+    </div>

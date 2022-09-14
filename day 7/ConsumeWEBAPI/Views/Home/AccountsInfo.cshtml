@@ -1,0 +1,39 @@
+﻿
+
+
+<script>
+    function getAccountDetails()
+    {
+      fetch('https://localhost:7243/api/accounts/accountandbranch').then( response => response.json())
+                                                                   .then(result =>{
+                                                                     //  alert('Got the data');
+                                                                     console.log(result);
+                                                                     for(var i=0;i<result.length;i++)
+                                                                     {
+                                                                          $("table").append("<tr>" + 
+                                                                          
+                                                                          "<td>" + result[i].accountNo + "</td>" +
+                                                                          "<td>" + result[i].accName + "</td>" +
+                                                                          "<td>" + result[i].accType + "</td>" +
+                                                                          "<td>" + result[i].accBalance + "</td>" +
+                                                                          "<td>" + result[i].branchNo	 + "</td>" +
+                                                                          "<td>" + result[i].branchName	 + "</td>" +
+                                                                          "<td>" + result[i].branchCity	 + "</td>" +
+                                                                          
+                                                                          
+                                                                          + "</tr>")
+                                                                     }
+                                                                    
+                                                                   })
+                                                                   .catch(err =>{
+                                                                     //  alert('Errorrrrrr');
+                                                                     console.log(err);
+
+                                                                   })
+    }
+</script>
+
+
+
+<button class="btn btn-danger" onClick="getAccountDetails()"> SHow Accounts </button>
+<table class="table"></table>

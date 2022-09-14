@@ -1,0 +1,28 @@
+https://localhost:7243/api/accounts/accountandbranch
+
+accountNo
+accName
+accType
+accBalance
+branchNo	
+branchName
+branchCity
+----------------------------------------------------------------------------------------------
+	fetch is a stadard function in all the browsers
+	fetch returns a promise
+		fetch('url', {data you want to send, for POST,DELETE,PUT}).then( convert data to json)
+									  .then( code to display the data)
+									  .catch(show error reason)
+									  .finally()
+
+------------------------------------------------
+	Configure CORS on server - Cross Origin Resource Shareing
+
+		a. Add a nugetPackage Microsoft.AspNetCore.Cors
+		b. in program.cs 
+			configure service
+			configure middleware
+
+Consume WebAPI in your app
+	Client side calls (Fetch API) - fastest, light weight - not so secured
+	Server side calls (HttpClient) - safest and secured
