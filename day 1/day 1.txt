@@ -4,7 +4,7 @@ Lab:
 
 1. Create your first WebAPI project
 2. Add a new WebAPI controller GreetingsController - empty
-3. Add Actions methods for below
+3. Add Action methods for below
 	Greet
 	Greet(string name)
 	Calculate
